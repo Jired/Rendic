@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendic</title>
+   
+    <script src="index.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="rent.png" type="image/x-icon">
+    
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/estilo.css" rel="stylesheet">
+    <link href="ini.css" rel="stylesheet">
+
+</head>
+<body>
+    
+<!-- Inicio se sesion-->
+<div id="registerModal" class="m">
+    <div class="m-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="registerOptions" class="m-section">
+            <h2>Regístrate</h2>
+            <button class="role-btn" onclick="selectRole('arrendador')">Soy Arrendador</button>
+            <button class="role-btn" onclick="selectRole('estudiante')">Soy Estudiante</button>
+        </div>
+        <div id="registerForm" class="m-section" style="display: none;">
+            <h2>Formulario de Registro</h2>
+            <!-- Aquí iría el formulario de registro -->
+            <form>
+                <div id="arrendadorFields" style="display: none;">
+                    <!-- Campos específicos para arrendadores -->
+                </div>
+                <div id="estudianteFields" style="display: none;">
+                    <!-- Campos específicos para estudiantes -->
+                </div>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="registerModal" class="m">
+    <div class="m-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Iniciar Sesión</h2>
+        <!-- Aquí iría el formulario de inicio de sesión -->
+        <form>
+            <input type="email" placeholder="Correo Electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button type="submit">Ingresar</button>
+        </form>
+    </div>
+</div>
+</body>
